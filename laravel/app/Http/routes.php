@@ -21,9 +21,30 @@ Route::get('/challenges/{challenge_id}', [
 	'as'   => 'get.challenge'
 ]);
 
+Route::get('/google', [
+	'uses' => 'ChallengeController@google',
+	'as'  => 'google'
+]);
+
+Route::get('/create', [
+	'uses' => 'ChallengeController@getCreate',
+	'as'  => 'get.create'
+]);
+
+Route::get('/fit', [
+	'uses' => 'ChallengeController@fit',
+	'as'  => 'fit'
+]);
+
 Route::post('/challenges/functions/post-qr', [
 	'uses' => 'ChallengeController@postQr',
 	'as'   => 'post.qr',
+	'middleware' => 'auth'
+]);
+
+Route::post('/challenges/functions/post-twitter', [
+	'uses' => 'ChallengeController@postTwitter',
+	'as'   => 'post.twitter',
 	'middleware' => 'auth'
 ]);
 

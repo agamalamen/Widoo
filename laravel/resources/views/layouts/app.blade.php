@@ -45,8 +45,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}" style="font-family:'Patrick Hand', cursive; font-weight: bold; font-size: 24px;">
-                    Crowdsource
+                <a class="navbar-brand" href="{{ url('/') }}" style="font-family:'Patrick Hand', cursive; font-weight: bold; font-size: 24px; margin-bottom: 10px; margin-top: -5px;">
+                    <img class="img-responsive" src="https://i.imgur.com/5mfmP1B.png" style="width: 35px; height: 35px;">
                 </a>
             </div>
 
@@ -88,7 +88,7 @@
 
     <footer class="footer">
         <ul style="padding-top: 20px;" class="text-center list-inline">
-            <li>© 2018 Crowdsource</li>
+            <li>© 2018 Widoo</li>
             <li>|</li>
             <li><a href="#" class="text-muted">Terms of service</a></li>
             <li>|</li>

@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "google/cloud-vision": "^0.17.2",
         "thujohn/twitter": "^2.2",
-        "fennb/phirehose": "^1.0"
+        "fennb/phirehose": "^1.0",
+        "google/apiclient": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
